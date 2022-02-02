@@ -1,0 +1,3 @@
+names= ['Kelly', 'Abhi', 'Sam', 'Dean', 'Jack']
+print(sorted(names)) # returns a new list {names sorted alphabetically}
+print(sorted(names, key=len)) # returns a new list {names sorted by length of string}

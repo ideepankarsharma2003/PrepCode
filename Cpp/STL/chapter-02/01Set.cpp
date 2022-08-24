@@ -13,11 +13,15 @@ int main(){
     for (int i = 0; i < 5; i++){
         /* code */
         int x;
-        cin>>x; s.insert(x);  // log(N) ---> time
+        cin>>x; 
+        s.insert(x);  // log(N) ---> time to insert
     }
 
     for(auto it: s){
         cout<<it<<" ";
     }
      
+    // erase functionality --------> log 
+    s.erase(s.begin()); // s.erase(iterator);
+    
 }

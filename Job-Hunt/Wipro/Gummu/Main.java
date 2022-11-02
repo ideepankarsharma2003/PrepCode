@@ -21,22 +21,49 @@ public class Main {
             }
         }
 
-        
+        // max have the maximum value now
+
+
         int freq[] = new int[max];
+
+
+        // System.out.println("The freq: ");
+        // for (int i=0; i<max; i++){
+        //     System.out.print(freq[i] + "  ");
+        // }
+        // System.out.println();
+
+
         for (int i : input1) {
-            freq[i - 1]++;
+            freq[i-1]++;
         }
+
+        
+        System.out.println("The freq: ");
+        for (int i=0; i<max; i++){
+            System.out.print(freq[i] + "  ");
+        }
+        System.out.println();
+
+
+
         int high_occ = 0, sec_high_occ = 0;
+
+
+
         for (int i = 0; i < max; i++) {
             if (freq[i] > 0 && freq[i] > freq[high_occ]) {
                 if (freq[i] != freq[high_occ]) {
                     sec_high_occ = high_occ;
                 }
                 high_occ = i;
-            } else if (freq[i] > 0 && freq[i] > freq[sec_high_occ]) {
+            } else if (freq[i] > 0 && freq[i] >= freq[sec_high_occ]) {
                 sec_high_occ = i;
             }
         }
+
+
+
         sec_high_occ = sec_high_occ + 1;
         high_occ = high_occ + 1;
         s1 = Integer.toString(sec_high_occ);

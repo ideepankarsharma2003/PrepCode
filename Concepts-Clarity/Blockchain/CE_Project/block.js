@@ -1,5 +1,6 @@
 const { GENESIS_DATA, MINE_RATE } = require("./config");
 const cryptoHash= require('./crypto-hash')
+const hexToBinary= require('hex-to-binary')
 
 class Block{
     constructor({ timestamp, prevHash, hash, nonce, difficulty, data }){
@@ -28,7 +29,7 @@ class Block{
             timestamp=Date.now()
             difficulty= Block.adjustDifficulty({originalBlock:prevBlock, timestamp:timestamp})
             hash= cryptoHash(timestamp, prevHash, data, nonce, difficulty)
-        }while(hash.substring(0, difficulty)!=='0'.repeat(difficulty))
+        }while(hexToBinary(hash).substring(0, difficulty)!=='0'.repeat(difficulty))
 
         return new this({
             timestamp: timestamp,

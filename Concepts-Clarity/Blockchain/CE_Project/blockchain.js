@@ -35,7 +35,7 @@ class BlockChain{
         }
         for(let i=1; i<chain.length; i++){
             const {timestamp, prevHash, hash, nonce, difficulty, data}= chain[i]
-            
+            const lastDifficulty= chain[i-1].difficulty
             // console.log(chain[i])
             // console.log('timestamp: ', timestamp)
             // console.log('prevhash: ', prevHash)
@@ -54,6 +54,10 @@ class BlockChain{
                     // console.log('validated_hash: ', validated_hash)
                     return false
                 }
+                
+                if (Math.abs(lastDifficulty-difficulty)>1) {
+                    return false
+                }
         }
         return true
     }
@@ -66,10 +70,10 @@ class BlockChain{
 const blockchain= new BlockChain
 blockchain.addBlock({data: 'This is block 1'})
 blockchain.addBlock({data: 'This is block 2'})
-console.log(blockchain)
+// console.log(blockchain)
 
 const result= BlockChain.isValidChain(blockchain.chain)
-console.log("Valid Blockchain? ", result)
+// console.log("Valid Blockchain? ", result)
 
 
 module.exports= BlockChain

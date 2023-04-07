@@ -1,0 +1,37 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Deepankar\Placement-Prep\Concepts-Clarity\Data Science\2023\PYTHON-SD\PyQT5> code .
+PS C:\Deepankar\Placement-Prep\Concepts-Clarity\Data Science\2023\PYTHON-SD\PyQT5> ls
+
+
+    Directory: C:\Deepankar\Placement-Prep\Concepts-Clarity\Data Science\2023\PYTHON-SD\PyQT5
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----          4/7/2023   7:06 PM            598 01_basicSetup.py
+-a----          4/7/2023   7:25 PM            939 02_basicsClass.py
+-a----          4/7/2023   8:01 PM           1857 03_exampleGUI.ui
+
+
+PS C:\Deepankar\Placement-Prep\Concepts-Clarity\Data Science\2023\PYTHON-SD\PyQT5> pyuic5
+Error: one input ui-file must be specified
+PS C:\Deepankar\Placement-Prep\Concepts-Clarity\Data Science\2023\PYTHON-SD\PyQT5> pyuic5 -x .\03_exampleGUI.ui -o .\03_exampleGUI.py
+PS C:\Deepankar\Placement-Prep\Concepts-Clarity\Data Science\2023\PYTHON-SD\PyQT5> ls
+
+
+    Directory: C:\Deepankar\Placement-Prep\Concepts-Clarity\Data Science\2023\PYTHON-SD\PyQT5
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----          4/7/2023   7:06 PM            598 01_basicSetup.py
+-a----          4/7/2023   7:25 PM            939 02_basicsClass.py
+-a----          4/7/2023   8:02 PM           2621 03_exampleGUI.py
+-a----          4/7/2023   8:01 PM           1857 03_exampleGUI.ui
+
+
+PS C:\Deepankar\Placement-Prep\Concepts-Clarity\Data Science\2023\PYTHON-SD\PyQT5>

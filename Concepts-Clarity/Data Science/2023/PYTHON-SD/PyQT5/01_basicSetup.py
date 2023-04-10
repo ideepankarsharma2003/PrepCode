@@ -3,18 +3,32 @@ from PyQt5.QtWidgets import QApplication, QMainWindow
 import sys
 import os
 
+app = QApplication(sys.argv)
+win = QMainWindow()
+label = QtWidgets.QLabel(win)
+
+
+
 
 
 def buttonClick():
     print("Button Clicked")
+    label.setText("This is great !!!"*10)
+    # label.adjustSize()
+    # label.layout()
+
+
+
+
+
+
+
 
 def window():
-    app = QApplication(sys.argv)
-    win = QMainWindow()
+    
     win.setGeometry(200, 200, 800, 600)
     win.setWindowTitle("PyQt5 Tutorial")
 
-    label = QtWidgets.QLabel(win)
     label.setText("Hello World!")
     label.move(50, 50)
 

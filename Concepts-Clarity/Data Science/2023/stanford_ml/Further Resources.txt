@@ -1,0 +1,5 @@
+	• LEGO Robotics
+	• Robot Operating Systems(ROS)
+	• Majko Physics Engine (Free)
+	• Sutton Barto(Text Book)
+	• Meta Learning -> Chelsea Finn Stanford

@@ -1,0 +1,5 @@
+Flask 
+    -> web application framework written in python
+    -> Armin Ronacher {leads POCCO}
+    -> WSGI {Web Server Gateway Interface}
+    -> Jinja2 template engine 

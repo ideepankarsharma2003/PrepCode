@@ -1,0 +1,16 @@
+version: '3.0'
+services:
+  web:
+    image: web-app
+    build: .
+    ports:
+      - "8000:5000"
+  redis:
+    image: redis
+  # mysql:
+  #   image: mysql
+  #   environment:
+  #     MYSQL_ROOT_PASSWORD: root
+  #     MYSQL_DATABASE: flask
+  #     MYSQL_USER: flask
+  #     MYSQL_PASSWORD: flask

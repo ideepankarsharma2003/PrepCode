@@ -15,7 +15,7 @@ Write a function findMaxHealthSum(health, serverType, m) to calculate the maximu
 ---
 
 Solution:
-
+```python
 from collections import defaultdict
 
 def findMaxHealthSum(health, serverType, m):
@@ -41,7 +41,7 @@ m = 2
 
 print(findMaxHealthSum(health, serverType, m))  # Output: 20
 
-
+```
 ---
 
 Question 2: Quality Score Optimization
@@ -61,7 +61,7 @@ The task is to determine the maximum possible quality score (sum of ratings) aft
 ---
 
 Solution:
-
+```python
 import math
 
 def calculateMaxQualityScore(impactFactor, ratings):
@@ -101,5 +101,5 @@ ratings = [5, -3, -3, 2, 4]
 impactFactor = 3
 print(calculateMaxQualityScore(impactFactor, ratings))  # Output: 12
 
-
+```
 ---
